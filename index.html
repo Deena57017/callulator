@@ -13,25 +13,27 @@
             <div id="calculator">
                 <from>
                     <p> How much was your bill</p>
-                    <p> $ <input type="text" id="billamt" placeholder="Bill Amount"></p>
+                    <p> $ <input type="text" id="billamt" placeholder="Bill Amount"></p> <!--placeholder คือเวลาเราจะกรอกชื่อเราในช่องมันจะบอกมาให้เราในช่องว่า ชื่อ สกุล-->
                     <p>How was your service ?</p>
                     <select id="serviceQual">
-                        <option disabled selected value="0">-- Choose an Option --</option>
-                        <option value="0.3">30&#37; &#45; Outstanding</option>
+                        <option disabled selected value="0">-- Choose an Option -- </option> <!--Selected คือให้เราเลือกมีดีกว่า disabled สีเทาๆ มีไม่มีก็ได้-->
+                        <option value="0.3">30&#37; &#45; Outstanding</option> <!--30&#37 ตัว&#37 %  , &#458คือ - -->
                         <option value="0.2">20&#37; &#45; Good</option>
                         <option value="0.15">15&#37; &#45; It was ok</option>
                         <option value="0.1">10&#37; &#45; Bad</option>
                         <option value="0.05">5&#37; &#45; Terrible</option>
+                        <!--เป็นส่วนที่ทำให้เราเลือก-->
                     </select>
                 </from>>
                     <p>How many prople are sharing the bill</p>
                     <input type="text" id="propleamt" placeholder="Namber of People"> People
                     <button type="button" id="calculate">calculate</button>
+                    
             </div>
             <!--calculator End-->
             <div id="totalTip">
-                <sup>$</sup><span id="tip">0.00</span>
-                <small id="each">each</small>
+                <sup>$</sup><span id="tip">0.00</span> <!-- <sup> ตัวยกกำลัง </span> การแทรกช่องว่าง-->
+                <small id="each">each</small> <!-- samll ลดคำสั่ง 1 ระดับ -->
             </div>
         </div>
         <script src="app.js"></script>

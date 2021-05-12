@@ -4,12 +4,12 @@ function calculateTip(){
     var serviceQual= document.getElementById("serviceQual").value;
     var numOfPeople = document.getElementById("propleamt").value;
 //สร้างตัวแปลแล้ว get id เข้ามาเรียบร้อย
-
+    //เราไม่ใส่อะไรจะขึ้นเตือนตรงนี้
     if(billAmt == "" || serviceQual == 0 ){
         alert("Please enter values");
         return;
     }
-    //เช็ค input
+    //เช็ค input ที่เข้ามาว่าจะเข้าเงื่อนไขไหน
     if(numOfPeople==""|| numOfPeople>=1){
         numOfPeople =1;
         document.getElementById("each").style.display ="none";
@@ -25,10 +25,12 @@ function calculateTip(){
     document.getElementById("tip").innerHTML = total;
 
 }
-document.getElementById("totalTip").style.display="none";
+//ส่วนเป็นส่วนที่จะทำให้แสดงหรือไม่แสดง สังเกตุตรง display
+document.getElementById("totalTip").style.display="none"; 
 document.getElementById("each").style.display="none";
 
-// Click to call function
+
+// พอเราคลิกไป มันจะมาเรียกฟังชัน calculateTip();
 document.getElementById("calculate").onclick = function(){
     calculateTip();
 

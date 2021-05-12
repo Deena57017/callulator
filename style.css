@@ -2,7 +2,7 @@
 
 body{
     font-family:'Roboto' sans-serif;
-    background: linear-gradient(to left, #8e0e00,#1f1c18);
+    background: linear-gradient(to left, #8e0e00,#1f1c18); 
 }
 #container{
     height: 525px;
@@ -33,7 +33,7 @@ input{
 }
 #billamt{
     font-size: 14px;
-    color:red ;
+    color:rgb(49, 38, 38) ;
     background-color: #f7f7f7;
     width: 60%;
     padding: 5px 5px 8px 8px;
@@ -47,7 +47,7 @@ input{
     width: 60%;
     padding: 5px 5px 8px 8px;
     margin-left: 20px;
-    color: red;
+    color: rgb(34, 21, 21);
     background-color:#f7f7f7 ;
     font-size: 14px;
 
@@ -61,7 +61,7 @@ button{
     text-transform: uppercase;
     display: block;
     margin: 30px auto;
-    background-color: #ad133a;
+    background-color: #ee6c8c;
     border-radius: 5px;
     width: 200px;
     height: 50px;
