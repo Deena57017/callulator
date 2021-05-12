@@ -13,7 +13,8 @@ function calculateTip(){
     if(numOfPeople==""|| numOfPeople>=1){
         numOfPeople =1;
         document.getElementById("each").style.display ="none";
-    }else{
+    }
+    else{
         document.getElementById("each").style.display="ิblock";
     }
     // คำนวณแล้ว
@@ -21,11 +22,11 @@ function calculateTip(){
     total=Math.round(total*100) / 100;
     total=total.toFixed(2);
     document.getElementById("totalTip").style.display = "block";
-    document.getElementById("tip").innerHTML=total;
+    document.getElementById("tip").innerHTML = total;
 
 }
-document.getElementById("totalTip").style.display="none"
-document.getElementById("each").style.display="none"
+document.getElementById("totalTip").style.display="none";
+document.getElementById("each").style.display="none";
 
 // Click to call function
 document.getElementById("calculate").onclick = function(){
